@@ -1,28 +1,40 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pl.polsl.sortingvisualizer.model;
 
 /**
  *
  * @author qooboos
  */
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class BubbleSort implements SortingAlgorithm {
 
-    public void Sort(int[] array) {
+    public void Sort(ArrayList<Integer> array, Iterator<Integer> it) {
 
-        int n = array.length;
-        int temp;
-
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < (n - i - 1); j++) {
-                if (array[j] > array[j + 1]) {
-                    temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
+        Integer n = array.size();
+        Integer temp;
+         
+       
+        for (Iterator i = it; i.hasNext();) {
+            for (Integer j = 0; j < (n - 1); j++) {
+                if (array.get(j) > array.get(j + 1)) {
+                    temp = array.get(j);
+                    //array.get(j) = array.get(j + 1);
+                    array.set(j, array.get(j + 1));
+                    //array[j + 1] = temp;
+                    array.set(j + 1, temp);
+               
                 }
             }
         }
+    }
+    
+    public void Sort(ArrayList<Integer> array, Iterator<Integer> it, Iterator<Integer> it2) {
+        
+        Integer n = array.size();
+        Integer temp;
+        
+        for(Iterator i = it; i.hasNext();){}
     }
 }

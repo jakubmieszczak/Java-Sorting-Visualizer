@@ -1,15 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pl.polsl.sortingvisualizer.model;
 
 /**
  *
  * @author qooboos
  */
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public interface SortingAlgorithm {
 
-    void Sort(int[] array);
+    void Sort(ArrayList<Integer> array, Iterator<Integer> it);
 
 }

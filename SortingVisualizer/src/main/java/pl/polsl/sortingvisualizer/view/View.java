@@ -1,8 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pl.polsl.sortingvisualizer.view;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
@@ -18,13 +17,21 @@ public class View {
 
     }
 
-    static public void PrintArray(int[] array) {
-        int n = array.length;
-        //System.out.println(n);
+    public void PrintArray(ArrayList<Integer> array) {
         
-        for(int i = 0; i < n; i++)
-        {
+        Integer n = array.size();
+
+        for (Integer i = 0; i < n; i++) {
             System.out.print(i + " ");
+        }
+    }
+
+    public void PrintArrayWithIterators(ArrayList<Integer> array, Iterator<Integer> it) {
+
+        Integer n = array.size();
+
+        for (Iterator i = it; it.hasNext();) {
+            System.out.print(it.next() + " ");
         }
     }
 

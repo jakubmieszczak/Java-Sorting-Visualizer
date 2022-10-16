@@ -8,9 +8,9 @@ import java.util.Scanner;
  */
 public class Controller {
 
-    public static int GetChoice() {
+    public Integer getChoice() {
         Scanner scan = new Scanner(System.in);
-        int choice = scan.nextInt();
+        Integer choice = scan.nextInt();
         return choice;
-    }
+    }  
 }

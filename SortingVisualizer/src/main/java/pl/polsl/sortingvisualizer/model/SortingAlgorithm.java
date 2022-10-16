@@ -6,10 +6,10 @@ package pl.polsl.sortingvisualizer.model;
  */
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import pl.polsl.sortingvisualizer.controller.SortingInfo;
 
 public interface SortingAlgorithm {
 
-    void Sort(ArrayList<Integer> array, Iterator<Integer> it);
+    void sort(ArrayList<Integer> array, SortingInfo sortingInfo);
 
 }

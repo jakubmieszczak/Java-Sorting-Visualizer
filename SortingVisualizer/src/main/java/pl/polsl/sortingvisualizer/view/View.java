@@ -1,7 +1,7 @@
 package pl.polsl.sortingvisualizer.view;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import pl.polsl.sortingvisualizer.controller.SortingInfo;
 
 /**
  *
@@ -9,7 +9,7 @@ import java.util.Iterator;
  */
 public class View {
 
-    public void PrintMenu() {
+    public void printMenu() {
         System.out.println("Choose sorting algorithm:");
         System.out.println("1. Bubble Sort");
         System.out.println("2. Quick Sort");
@@ -17,22 +17,21 @@ public class View {
 
     }
 
-    public void PrintArray(ArrayList<Integer> array) {
-        
+    public void printArray(ArrayList<Integer> array) {
+
         Integer n = array.size();
 
         for (Integer i = 0; i < n; i++) {
-            System.out.print(i + " ");
+            System.out.print(array.get(i) + " ");
         }
     }
 
-    public void PrintArrayWithIterators(ArrayList<Integer> array, Iterator<Integer> it) {
+    public void printAllIterations(SortingInfo sortingInfo) {
 
-        Integer n = array.size();
-
-        for (Iterator i = it; it.hasNext();) {
-            System.out.print(it.next() + " ");
+        ArrayList<ArrayList<Integer>> sortingIterations = sortingInfo.sortingIterations;
+        for (ArrayList<Integer> innerArray : sortingIterations) {
+            printArray(innerArray);
+            System.out.println();
         }
     }
-
 }

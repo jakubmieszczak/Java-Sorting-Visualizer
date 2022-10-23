@@ -24,10 +24,7 @@ public class SortingVisualizer {
 
         if (choice == 1) {
             SortingAlgorithm sortingAlgorithm = new BubbleSort();
-            SortingInfo sortingInfo = new SortingInfo(array, sortingAlgorithm);
-            sortingAlgorithm.sort(array, sortingInfo);
-            
-            view.printAllIterations(sortingInfo);
+            sortingAlgorithm.sort(array);
         }
         //view.printArray(array);
     }

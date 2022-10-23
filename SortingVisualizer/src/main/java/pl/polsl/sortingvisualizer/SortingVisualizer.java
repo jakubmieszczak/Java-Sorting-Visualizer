@@ -18,20 +18,19 @@ public class SortingVisualizer {
         View view = new View();
         EventListener notification = new Notification();
 
-        ArrayList array = controller.getArray();
+        //ArrayList array = controller.getArray();
       
         view.printMenu();
         //Integer choice = controller.getChoice();
         Integer choice = 1;
-        
-        //EventManager lol = new EventManager();
-        //lol.addSubscriber(notification);
-        //lol.notifyListener();
 
         if (choice == 1) {
             SortingAlgorithm sortingAlgorithm = new BubbleSort();
             sortingAlgorithm.addSubscriber(notification);
-            sortingAlgorithm.sort(array);
+            
+            sortingAlgorithm.sort(controller.getArray());
         }
+        
+        view.printArray(controller.getArray());
     }
 }

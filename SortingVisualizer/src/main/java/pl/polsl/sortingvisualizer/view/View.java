@@ -23,5 +23,6 @@ public class View {
         for (Integer i = 0; i < n; i++) {
             System.out.print(array.get(i) + " ");
         }
+        System.out.println("");
     }
 }

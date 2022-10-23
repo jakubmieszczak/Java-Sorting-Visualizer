@@ -9,7 +9,6 @@ import java.util.ArrayList;
 
 public class SortingAlgorithm extends EventManager{
     
-    //ArrayList<Integer> originalArray = null;
     //Integer arrayAccesses = 0;
     //Integer arrayComparsions = 0;
     //EventManager events = null;

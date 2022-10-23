@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class Controller {
 
-    ArrayList<Integer> array = new ArrayList<Integer>(List.of(6, 2, 3, 1));;
+    ArrayList<Integer> array = new ArrayList<Integer>(List.of(6, 2, 3, 1));
     
     public ArrayList getArray() {
          

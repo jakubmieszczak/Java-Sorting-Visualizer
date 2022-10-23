@@ -14,9 +14,9 @@ import pl.polsl.sortingvisualizer.view.View;
 public class Notification extends Controller implements EventListener {
 
     View view = new View();
+    
     @Override
     public void update(){
-        //System.out.println("cokolwiek");
         view.printArray(getArray());
     }
 }

@@ -25,6 +25,7 @@ public class BubbleSort extends SortingAlgorithm {
                     temp = array.get(j);
                     array.set(j, array.get(j + 1));
                     array.set(j + 1, temp);
+                    //System.out.println("zmiana");
                 }
                 this.notifyListener();
             }

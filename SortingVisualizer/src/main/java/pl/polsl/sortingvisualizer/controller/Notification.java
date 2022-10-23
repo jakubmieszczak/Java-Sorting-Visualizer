@@ -6,13 +6,17 @@ package pl.polsl.sortingvisualizer.controller;
 
 import pl.polsl.sortingvisualizer.view.View;
 
+
 /**
  *
  * @author qooboos
  */
-public class Notification implements EventListener {
-    
-    public void update(String eventType){
-        
+public class Notification extends Controller implements EventListener {
+
+    View view = new View();
+    @Override
+    public void update(){
+        //System.out.println("cokolwiek");
+        view.printArray(getArray());
     }
 }

@@ -10,6 +10,6 @@ package pl.polsl.sortingvisualizer.controller;
  */
 public interface EventListener {
     
-    void update(String eventType);
+    void update();
     
 }

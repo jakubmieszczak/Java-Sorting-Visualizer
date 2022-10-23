@@ -7,12 +7,13 @@ package pl.polsl.sortingvisualizer.model;
 
 import java.util.ArrayList;
 
-public interface SortingAlgorithm {
+public class SortingAlgorithm extends EventManager{
     
     //ArrayList<Integer> originalArray = null;
-    Integer arrayAccesses = 0;
-    Integer arrayComparsions = 0;
+    //Integer arrayAccesses = 0;
+    //Integer arrayComparsions = 0;
+    //EventManager events = null;
     
-    void sort(ArrayList<Integer> array);
+    public void sort(ArrayList<Integer> array){};
 
 }

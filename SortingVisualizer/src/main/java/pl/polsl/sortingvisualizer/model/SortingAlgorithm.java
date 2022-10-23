@@ -6,10 +6,13 @@ package pl.polsl.sortingvisualizer.model;
  */
 
 import java.util.ArrayList;
-import pl.polsl.sortingvisualizer.controller.SortingInfo;
 
 public interface SortingAlgorithm {
-
-    void sort(ArrayList<Integer> array, SortingInfo sortingInfo);
+    
+    //ArrayList<Integer> originalArray = null;
+    Integer arrayAccesses = 0;
+    Integer arrayComparsions = 0;
+    
+    void sort(ArrayList<Integer> array);
 
 }

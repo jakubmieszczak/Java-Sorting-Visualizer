@@ -1,7 +1,6 @@
 package pl.polsl.sortingvisualizer.view;
 
 import java.util.ArrayList;
-import pl.polsl.sortingvisualizer.controller.SortingInfo;
 
 /**
  *
@@ -23,15 +22,6 @@ public class View {
 
         for (Integer i = 0; i < n; i++) {
             System.out.print(array.get(i) + " ");
-        }
-    }
-
-    public void printAllIterations(SortingInfo sortingInfo) {
-
-        ArrayList<ArrayList<Integer>> sortingIterations = sortingInfo.sortingIterations;
-        for (ArrayList<Integer> innerArray : sortingIterations) {
-            printArray(innerArray);
-            System.out.println();
         }
     }
 }

@@ -14,7 +14,7 @@ public class Controller {
     
     public ArrayList getArray() {
          
-        return array;
+        return this.array;
     }
     
     public Integer getChoice() {

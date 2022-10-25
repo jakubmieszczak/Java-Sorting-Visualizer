@@ -11,12 +11,18 @@ import pl.polsl.sortingvisualizer.view.View;
  *
  * @author qooboos
  */
-public class Notification extends Controller implements EventListener {
+public class Notification implements EventListener {
 
     View view = new View();
+    Controller controller;
+    
+    public Notification(Controller controller){
+        this.controller = controller;
+    }
     
     @Override
     public void update(){
-        view.printArray(getArray());
+        view.printArray(controller.getArray());
+        
     }
 }

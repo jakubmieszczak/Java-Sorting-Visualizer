@@ -16,13 +16,11 @@ public class SortingVisualizer {
 
         Controller controller = new Controller();
         View view = new View();
-        EventListener notification = new Notification();
+        EventListener notification = new Notification(controller);
 
-        //ArrayList array = controller.getArray();
       
         view.printMenu();
-        //Integer choice = controller.getChoice();
-        Integer choice = 1;
+        Integer choice = controller.getChoice();
 
         if (choice == 1) {
             SortingAlgorithm sortingAlgorithm = new BubbleSort();

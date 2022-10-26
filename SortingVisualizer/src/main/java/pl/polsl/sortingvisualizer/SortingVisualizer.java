@@ -17,8 +17,7 @@ public class SortingVisualizer {
         Controller controller = new Controller();
         View view = new View();
         EventListener notification = new Notification(controller);
-
-      
+     
         view.printMenu();
         Integer choice = controller.getChoice();
 

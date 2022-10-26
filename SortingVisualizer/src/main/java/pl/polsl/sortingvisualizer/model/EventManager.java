@@ -13,7 +13,7 @@ import pl.polsl.sortingvisualizer.controller.EventListener;
  */
 public class EventManager {
 
-    private ArrayList<EventListener> listeners;
+    private final ArrayList<EventListener> listeners;
     
     public EventManager(){
         this.listeners = new ArrayList<EventListener>();
@@ -30,8 +30,8 @@ public class EventManager {
     }
 
     public void notifyListener() {
-             
-        listeners.forEach((listener) -> listener.update());
+
+        listeners.forEach((listener) -> listener.update()); 
         //System.out.println(listeners.size());
     }
 }

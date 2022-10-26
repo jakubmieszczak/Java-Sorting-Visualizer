@@ -21,5 +21,5 @@ public class Controller {
         Scanner scan = new Scanner(System.in);
         Integer choice = scan.nextInt();
         return choice;
-    }  
+    } 
 }
